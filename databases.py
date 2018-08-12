@@ -1,6 +1,6 @@
 # Database related imports
 # Make sure to import your tables!
-from model import Base, Student
+from model import Base, Account
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -24,4 +24,3 @@ def account(acc_type,username,password,birth,gender):
         gender = gender)
     session.add(add_account)
     session.commit()
-account()
