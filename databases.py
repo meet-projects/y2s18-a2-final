@@ -24,3 +24,5 @@ def account(acc_type,username,password,birth,gender):
         gender = gender)
     session.add(add_account)
     session.commit()
+account("citizen","sir","meet18","1808","male")
+account("admin","huh","meet18","1808","male")
