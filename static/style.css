@@ -6,12 +6,16 @@
 
 /* Put your styles BELOW this line */
 
-selector {
-	property:value;
-}
+ 
 
-h3 {
-	color: blue;
-	text-align: center;
+.main-content {
+    background: #ffffcc;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    border: 5px solid blue;
+    margin: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px; 
 }
-
