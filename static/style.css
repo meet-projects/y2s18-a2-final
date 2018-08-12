@@ -5,3 +5,13 @@
 }
 
 /* Put your styles BELOW this line */
+
+selector {
+	property:value;
+}
+
+h3 {
+	color: blue;
+	text-align: center;
+}
+
