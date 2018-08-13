@@ -26,3 +26,15 @@
     padding-right: 15px;
     padding-bottom: 10px; 
 }
+
+.button {
+    background-color: ; 
+    border-radius: 12px;
+    border:2px solid #4CAF50;
+    color: #4CAF50;
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
