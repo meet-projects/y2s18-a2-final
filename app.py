@@ -2,7 +2,7 @@
 from flask import Flask, render_template, url_for, redirect, request, session
 
 # Add functions you need from databases.py to the next line!
-from databases import add_account
+from databases import add_account,check_user_and_pass
 
 # Starting the flask app
 app = Flask(__name__)
@@ -27,16 +27,26 @@ def signup():
         except:
             return render_template("signup.html", error_message = "Error: Username Taken")
         
-@app.route('/log-in')
+@app.route('/log-in', methods = ['GET', 'POST'])
 def signin():
-    if username == 'username' and if password == 'password':
-        return True
+    if request.method == 'POST':
+        if check_user_and_pass(request.form['username'],request.form['password']) == True:
+            session['logged_in'] = True
+            session['username'] = request.form['username']
+            return redirect(url_for('user_page'))
+        else:
+            print ('error:username or password are incorrect!!')
+            return render_template('login.html',incorrect_user_or_pass ='error:username or password are incorrect!! ')
+
     return render_template('login.html')
 
-@app.route('user')
+@app.route('/user')
 def user_page():
-    if signin == True:
+    if session.get('logged_in'):
         return render_template('user.html')
+    else:
+        return redirect(url_for('signin'))
+
 
 # Running the Flask app
 if __name__ == "__main__":

@@ -39,19 +39,19 @@ def check_user_exists(username):
         return True
 
 
-def check_user_and_pass():
-    POST_USERNAME = str(request.form['username'])
-    POST_PASSWORD = str(request.form['password'])
+def check_user_and_pass(username, password):
+
 
     Session = sessionmaker(bind=engine)
     s = Session()
-    query = s.query(Users).filter(Users.email.in_([POST_USERNAME]), Users.password.in_([POST_PASSWORD]) )
+    query = s.query(Users).filter_by(username=username,password=password )
     result = query.first()
-    if result:
-        session['logged_in'] = True
+    if result is not None:
+        return True
     else:
-        flash('wrong password!')
-return home
+       print('wrong password!')
+       return False
+       
     
     
     # check = session.query(Account).filter(username)
