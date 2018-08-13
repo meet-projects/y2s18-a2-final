@@ -47,6 +47,43 @@ body {
 
 
 
+body {
+	background-image: url("back.jpg");
+	    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;;
+}
+
+.header {
+	background-image:url("header.png");
+	height:70px;
+	width:110%;
+	margin:-10px;
+}
+
+.footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    height: 5%;
+    color: #8b3436;
+	background-color: #000000;
+	text-align: center;
+}
+
+p {
+	margin-left: 20px;
+    font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 26.4px;
+}
+=======
+<<<<<<< HEAD
+>>>>>>> e33d5c406245d8c2310904656358f310cf1fc91f
 .input[type=text] {
     width: 100%;
     padding: 12px 20px;
@@ -72,4 +109,3 @@ body {
     background-color: #4CAF50; 
     color: white;
 }
-
