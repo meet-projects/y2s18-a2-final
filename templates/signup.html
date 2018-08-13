@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<<title> THE NEIGHBORHOOD</title>
+	<title> THE NEIGHBORHOOD</title>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 	<h2>NOT SIGNED UP YET?!</h2>
-	<form action method="post">
-		<input type="text" username="username" placeholder="username">
+	<form action='/sign-up' method="post">
+		<input type="text" name="username" placeholder="username">
+		<p>{{error_message}}</p>
 		<br>
-		<input type="text" password="password" placeholder="password">
+		<input type="password" name="password" placeholder="password">
 		<br>
-		<input type="text" birth="date of birth" placeholder="date of birth">
-		<br>
-		i am a
-		<input type="radio" gender="gender" value="male">male
-		<input type="radio" gender="gender" value="female">female
+		<input type="text" name="birth" placeholder="birth">
 		<br>
 		i am a
-		<input type="radio" account_type="account_type" value="administrator">administrator
-		<input type="radio" account_type="account_type" value="citizen">citizen
+		<input type="radio" name="gender" value="male">male
+		<input type="radio" name="gender" value="female">female
+		<br>
+		i am a
+		<input type="radio" name="acc_type" value="administrator">administrator
+		<input type="radio" name="acc_type" value="citizen">citizen
 		<br>
 		<input type="submit" value="submit">
 	</form>	
