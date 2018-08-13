@@ -39,3 +39,19 @@ def check_user_exists(username):
         return True
 
 
+def check_user_and_pass(username, password):
+
+
+    Session = sessionmaker(bind=engine)
+    s = Session()
+    query = s.query(Users).filter_by(username=username,password=password )
+    result = query.first()
+    if result is not None:
+        return True
+    else:
+       print('wrong password!')
+       return False
+       
+    
+    
+    # check = session.query(Account).filter(username)
