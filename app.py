@@ -24,14 +24,19 @@ def signup():
         try:
             add_account(username,password,birth,gender,acc_type)
             return render_template('home.html')
-        except Exception as e:
-            print(e)
+        except:
             return render_template("signup.html", error_message = "Error: Username Taken")
         
 @app.route('/log-in')
 def signin():
+    if username == 'username' and if password == 'password':
+        return True
     return render_template('login.html')
 
+@app.route('user')
+def user_page():
+    if signin == True:
+        return render_template('user.html')
 
 # Running the Flask app
 if __name__ == "__main__":
