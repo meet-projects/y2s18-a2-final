@@ -3,21 +3,17 @@
     <head>
         <title>LOG IN</title>
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstarp.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
 
     </head>
     <body>
     	<form method="post">
     	<h1> Log in </h1>
-    	<input type="text" name="user_name" placeholder="Username">
+		<input type="text" name="user_name" placeholder="Username">
     	<input type="text" name="password" placeholder="Password">
-    	<p> Forgot Password? <button type="submit"> Log in   </button> </p>
-		</form>
-		
-    	<input class=input type="text" name="user_name" placeholder="Username">
-    	<input class=input type="text" name="password" placeholder="Password">
-    	<p> Forgot Password? <button id=login type="submit"> Log in   </button> </p>
+    	<p> Forgot Password? <button class="btn btn-outline-primary" type="submit"> Log in   </button> </p>
     	</form>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
         <script src="{{ url_for('static', filename='jquery.js')}}"></script>  
         <script src="{{ url_for('static', filename='bootstrap.bundle.js')}}"></script>
 </body>
