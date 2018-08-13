@@ -18,7 +18,7 @@ body {
 }
 
 .main-content {
-    background: #ffffcc;
+    background: lightblue;
     position: absolute;
     top: 0;
     left: 200px;
@@ -44,3 +44,5 @@ body {
     background-color: #4CAF50; 
     color: white;
 }
+
+
