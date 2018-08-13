@@ -13,7 +13,9 @@
 	left:100px;
 }
 
-
+body {
+    background-image: url("background.jpg");
+}
 
 .main-content {
     background: #ffffcc;
@@ -28,13 +30,17 @@
 }
 
 .button {
-    background-color: ; 
+    background-color:#008CBA ; 
     border-radius: 12px;
     border:2px solid #4CAF50;
-    color: #4CAF50;
     padding: 14px 40px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+.button:hover {
+    background-color: #4CAF50; 
+    color: white;
 }
