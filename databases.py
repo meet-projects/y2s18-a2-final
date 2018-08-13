@@ -15,14 +15,27 @@ session = DBSession()
 # Your database functions are located under here (querying, adding items, etc.)
 
 
-def account(acc_type,username,password,birth,gender):
-    add_account = Account(
-        acc_type = acc_type,
-        username = username,
-        password = password,
-        birth = birth,
-        gender = gender)
-    session.add(add_account)
-    session.commit()
-account("citizen","sir","meet18","1808","male")
-account("admin","huh","meet18","1808","male")
+def add_account(username,password,birth,gender,acc_type):
+    if check_user_exists(username)==False:
+        add_account = Account(
+            acc_type = acc_type,
+            username = username,
+            password = password,
+            birth = birth,
+            gender = gender)
+        session.add(add_account)
+        session.commit()
+    else:
+        raise Exception("User already exists")
+
+def check_user_exists(username):
+
+    account = session.query(Account.username).first()
+   # return True if account is not None else False
+    if account==None:
+
+        return False
+    else:
+        return True
+
+
