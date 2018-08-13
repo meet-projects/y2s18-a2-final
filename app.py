@@ -24,7 +24,8 @@ def signup():
         try:
             add_account(username,password,birth,gender,acc_type)
             return render_template('home.html')
-        except:
+        except Exception as e:
+            print(e)
             return render_template("signup.html", error_message = "Error: Username Taken")
         
 @app.route('/log-in')
