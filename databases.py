@@ -16,7 +16,7 @@ session = DBSession()
 
 
 def add_account(username,password,birth,gender,acc_type):
-    if check_user_exists(username):
+    if check_user_exists(username)==False:
         add_account = Account(
             acc_type = acc_type,
             username = username,
@@ -31,4 +31,11 @@ def add_account(username,password,birth,gender,acc_type):
 def check_user_exists(username):
 
     account = session.query(Account.username).first()
-    return True if account is not None else False
+   # return True if account is not None else False
+    if account==None:
+
+        return False
+    else:
+        return True
+
+
