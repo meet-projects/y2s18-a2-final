@@ -3,7 +3,8 @@
     <head>
         <title> THE NEIGHBORHOOD</title>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-        
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstarp.css') }}">
+
       
     </head>
     
@@ -24,6 +25,8 @@
             </div>
             
           
-        </div>          
+        </div>   
+        <script src="{{ url_for('static', filename='jquery.js')}}"></script>  
+        <script src="{{ url_for('static', filename='bootstrap.bundle.js')}}"></script>     
     </body>
 </html>

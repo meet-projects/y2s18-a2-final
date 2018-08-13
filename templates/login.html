@@ -2,7 +2,9 @@
 <html>
     <head>
         <title>My Final Project</title>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstarp.css') }}">
+
     </head>
     <body>
     	<form method="post">
@@ -10,7 +12,9 @@
     	<input type="text" name="user_name" placeholder="Username">
     	<input type="text" name="password" placeholder="Password">
     	<p> Forgot Password? <button type="submit"> Log in   </button> </p>
-    	</form>
-</body>
+		</form>
+		<script src="{{ url_for('static', filename='jquery.js')}}"></script>  
+        <script src="{{ url_for('static', filename='bootstrap.bundle.js')}}"></script>
+	</body>
 </html>
 
