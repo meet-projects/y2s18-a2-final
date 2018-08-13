@@ -3,7 +3,7 @@
     <head>
         <title> THE NEIGHBORHOOD</title>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstarp.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
 
       
     </head>
@@ -14,10 +14,10 @@
         <div class="main-content">
             <h1>THE NEIGHBORHOOD</h1>
         <form action="{{url_for('signup')}}">
-            <input class=button  type="submit" value="Sign Up">
+            <input class="btn btn-outline-primary"  type="submit" value="Sign Up">
         </form>
         <form action="{{'/log-in'}}">
-            <input class=button type="submit" value="Log in">
+            <input class="btn btn-outline-primary" type="submit" value="Log in">
         </form>
             <div class="aboutUs">
                 <h3>About us!</h3>
@@ -26,9 +26,7 @@
         </div>
         <div class="header">
      </div>
-     <a href="test.html">
-     <img src="THENEIGHBORHOODlogo1.png" alt="CSGO Howl" style="float:left";>
-     </a>    
+ 
      <div class="footer">
      <p> Copyright &copy; www.csgochance.com </p>
      </div>   
