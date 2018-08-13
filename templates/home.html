@@ -3,7 +3,8 @@
     <head>
         <title> THE NEIGHBORHOOD</title>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-        
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstarp.css') }}">
+
       
     </head>
     
@@ -22,8 +23,6 @@
                 <h3>About us!</h3>
                 <p>THE NEIGHBORHOOD connects and helps the people of a neighborhood to get in contact and help each other.</p> 
             </div>
-            
-          
         </div>
         <div class="header">
      </div>
@@ -32,6 +31,8 @@
      </a>    
      <div class="footer">
      <p> Copyright &copy; www.csgochance.com </p>
-     </div>          
+     </div>   
+    <script src="{{ url_for('static', filename='jquery.js')}}"></script>  
+    <script src="{{ url_for('static', filename='bootstrap.bundle.js')}}"></script>     
     </body>
 </html>
