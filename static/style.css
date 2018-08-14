@@ -11,7 +11,7 @@
     text-align: center;
 	background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: white;
+
     background-position: center;;
 }
 
@@ -23,8 +23,17 @@
     
 }
 
-
-
+.footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    height: 5%;
+    color: #8b3436;
+	background-color: #000000;
+	text-align: center;
+    background-position: top;   
+}
 
 
 
@@ -59,7 +68,7 @@ input[type=submit]:hover{
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
-    
+     
     text-align: center;
 }
 
@@ -68,18 +77,11 @@ input[type=submit]:hover{
     text-align: center;
     margin-top: 10%;
     bottom: 80px;
-    color: teal;
-    background-color: white;
-    font-size: 30px;
-}
-#about h1 {
-    color:green;
 }
 
 
 #buttons_home{
-    margin-top: 5%;
-    text-align:center;
+    margin-top: 5%
 
 }
 
@@ -87,40 +89,37 @@ input[type=submit]:hover{
 
 #title{
     margin-top: 2.5%;
-    color:white;
-    text-shadow: 8px rgb(255, 255, 255);
-    text-align:center; 
+
+    text-shadow: 8px rgb(255, 255, 255) 
 }
-#title h1{
-    text-align:center;
-}
+
 
 .home {
     background-image: url('background.jpg');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 50% 100%;
+}
 
-    align-self: center;
-    background-color: white;
-    
+.centeringimg {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: 50% 100
 }
 
 
 .content {
     margin: auto;
     width: 50%;
+    border: 3px solid green;
     padding: 10px;
     color:white;
 }
 
-#signup-header {
+h1 {
     color:white;
 }
 
-.cards{
-    margin-bottom: 10px;
-}
-.scard{
-    box-shadow: 0px 10px 10px #888888;
-    padding: 0px;
+ body {
+    background-image: url("background.jpg");
+    
 }
