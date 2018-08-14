@@ -11,8 +11,14 @@
     text-align: center;
 	background-repeat: no-repeat;
     background-attachment: fixed;
+<<<<<<< HEAD
 
     background-position: center;;
+=======
+    background-color: white;
+    background-position: center;
+    height: 300px;
+>>>>>>> a9d217293a9d651d8299d5b67f7a74c2561fde4f
 }
 
 .header {
@@ -81,7 +87,15 @@ input[type=submit]:hover{
 
 
 #buttons_home{
+<<<<<<< HEAD
     margin-top: 5%
+=======
+    margin-top: 5%;
+    text-align:center;
+    padding-left: 100px;
+    
+
+>>>>>>> a9d217293a9d651d8299d5b67f7a74c2561fde4f
 
 }
 
@@ -104,6 +118,14 @@ input[type=submit]:hover{
     background-image: url('background.jpg');
     background-repeat: no-repeat;
     background-size: 50% 100
+
+    color:white;
+    text-shadow: 8px rgb(255, 255, 255);
+    text-align:center; 
+    padding-left: 100px;
+}
+#title h1{
+    text-align:center;
 }
 
 
