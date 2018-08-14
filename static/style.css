@@ -76,10 +76,7 @@ input[type=submit]:hover{
     color:green;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 2f1253ba02c15ece42c7685286787182317e0da7
 #buttons_home{
     margin-top: 5%
 
@@ -93,24 +90,18 @@ input[type=submit]:hover{
     text-shadow: 8px rgb(255, 255, 255)
     text-align:center; 
 }
-
+#title h1{
+    text-align:center;
+}
 
 .home {
     background-image: url('background.jpg');
     background-repeat: no-repeat;
-    background-size: 50% 100%;
-<<<<<<< HEAD
+    background-size: 100% 100%;
+
     align-self: center;
     background-color: white;
     
-}
-=======
-}
-
-.centeringimg {
-    background-image: url('background.jpg');
-    background-repeat: no-repeat;
-    background-size: 50% 100
 }
 
 
@@ -129,4 +120,3 @@ h1 {
  body {
     background-image: url("background.jpg");
 }
->>>>>>> 2f1253ba02c15ece42c7685286787182317e0da7
