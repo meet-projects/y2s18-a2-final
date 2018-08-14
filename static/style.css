@@ -5,7 +5,7 @@
 }
 
 #home{
-    margin: 0%;
+    
     padding: 5%;
     background-image: url("background.jpg");
     text-align: center;
@@ -80,21 +80,24 @@ input[type=submit]:hover{
     text-align: center;
     margin-top: 10%;
     bottom: 80px;
+    color: teal;
+    background-color: white;
+    font-size: 30px;
 }
-
+#about h1{
+    color:green;
+}
 
 #buttons_home{
     margin-top: 5%;
     text-align:center;
-    padding-left: 100px;
+
 
     
 
 
 }
-.btn {
-    background-color: blue;
-}
+
 .welcome{
     text-align: center;
     color:green;
@@ -102,8 +105,10 @@ input[type=submit]:hover{
 }
 #title{
     margin-top: 2.5%;
-
+    color:white;
     text-shadow: 8px rgb(255, 255, 255) 
+    
+    text-align: center;
 }
 
 
@@ -123,8 +128,10 @@ input[type=submit]:hover{
     text-align:center; 
     padding-left: 100px;
 }
-#title h1{
+h1#title{
     text-align:center;
+    color: white;
+    
 }
 
 
