@@ -5,6 +5,7 @@
 }
 
 #home{
+    margin: 0%;
     padding: 5%;
     background-image: url("background.jpg");
     text-align: center;
@@ -14,29 +15,7 @@
 
     
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 9fea0a5229876c7e7fa7657e0650be5299fe956e
-.input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px solid red;
-    border-radius: 4px;
-}
-
-
-#login {
-    background-color:#008CBA ; 
-    border-radius: 12px;
-    border:2px solid #4CAF50;
-    padding: 14px 40px;
-=======
 #about{
->>>>>>> 1a02f3972018335771bf8882a9f2d7ff18664216
     text-align: center;
     margin-top: 10%;
 }
@@ -46,4 +25,5 @@
 }
 #title{
     margin-top: 2.5%;
+    text-shadow: 8px rgb(255, 255, 255) 
 }
