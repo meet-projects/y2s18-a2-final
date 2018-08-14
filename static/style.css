@@ -87,13 +87,19 @@ input[type=submit]:hover{
     margin-top: 5%;
     text-align:center;
     padding-left: 100px;
+
     
 
 
 }
-
-
-
+.btn {
+    background-color: blue;
+}
+.welcome{
+    text-align: center;
+    color:green;
+    font-family: "Times New Roman",Times,serif;
+}
 #title{
     margin-top: 2.5%;
 
