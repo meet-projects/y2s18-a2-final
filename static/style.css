@@ -11,6 +11,8 @@
     text-align: center;
 	background-repeat: no-repeat;
     background-attachment: fixed;
+
+    background-position: center;;
     background-color: white;
     background-position: center;
     height: 300px;
@@ -24,8 +26,17 @@
     
 }
 
-
-
+.footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    height: 5%;
+    color: #8b3436;
+	background-color: #000000;
+	text-align: center;
+    background-position: top;   
+}
 
 
 
@@ -60,7 +71,7 @@ input[type=submit]:hover{
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
-    
+     
     text-align: center;
 }
 
@@ -69,12 +80,6 @@ input[type=submit]:hover{
     text-align: center;
     margin-top: 10%;
     bottom: 80px;
-    color: teal;
-    background-color: white;
-    font-size: 30px;
-}
-#about h1 {
-    color:green;
 }
 
 
@@ -97,6 +102,22 @@ input[type=submit]:hover{
 }
 #title{
     margin-top: 2.5%;
+
+    text-shadow: 8px rgb(255, 255, 255) 
+}
+
+
+.home {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+}
+
+.centeringimg {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: 50% 100;
+
     color:white;
     text-shadow: 8px rgb(255, 255, 255);
     text-align:center; 
@@ -107,13 +128,19 @@ input[type=submit]:hover{
 }
 
 
-
 .content {
     margin: auto;
     width: 50%;
+    border: 3px solid green;
     padding: 10px;
     color:white;
+}
+h1 {
+    color:white;
+}
 
+body {
+    background-image: url("background.jpg");
 }
 
 
@@ -135,3 +162,4 @@ body {
 .backgroundimg {
     color:white;
 }
+
