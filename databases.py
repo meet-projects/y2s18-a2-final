@@ -15,14 +15,15 @@ session = DBSession()
 # Your database functions are located under here (querying, adding items, etc.)
 
 
-def add_account(username,password,birth,gender,acc_type):
+def add_account(first_name,last_name,username,password,gender,acc_type):
     if check_user_exists(username)==False:
         add_account = Account(
-            acc_type = acc_type,
-            username = username,
-            password = password,
-            birth = birth,
-            gender = gender)
+            first_name= first_name,
+            last_name = last_name,
+            username = username,         
+            password = password,            
+            gender = gender,
+            acc_type = acc_type)
         session.add(add_account)
         session.commit()
     else:
@@ -31,7 +32,6 @@ def add_account(username,password,birth,gender,acc_type):
 def check_user_exists(username):
 
     account = session.query(Account).filter_by(username=username).first()
-   # return True if account is not None else False
     if account==None:
 
         return False
@@ -40,7 +40,6 @@ def check_user_exists(username):
 
 
 def check_user_and_pass(username, password):
-
     print("hello")
     Session = sessionmaker(bind=engine)
     s = Session()
@@ -48,7 +47,6 @@ def check_user_and_pass(username, password):
     print("check")
     result = query.first()
     if result is not None:
-        
         return True
     else:
        print('wrong password!')
