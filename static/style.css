@@ -62,13 +62,14 @@ input[type=submit]:hover{
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
-     
+    
     text-align: center;
 }    
 #about{
     text-align: center;
     margin-top: 10%;
     bottom: 80px;
+    color: blue;
 }
 #buttons_home{
     margin-top: 5%
@@ -76,8 +77,9 @@ input[type=submit]:hover{
 }
 #title{
     margin-top: 2.5%;
-
-    text-shadow: 8px rgb(255, 255, 255) 
+    color:white;
+    text-shadow: 8px rgb(255, 255, 255)
+    text-align:center; 
 }
 
 
@@ -85,4 +87,6 @@ input[type=submit]:hover{
     background-image: url('background.jpg');
     background-repeat: no-repeat;
     background-size: 50% 100%;
+    align-self: center;
+    background-color: teal;
 }
