@@ -119,6 +119,11 @@ h1 {
     color:white;
 }
 
- body {
-    background-image: url("background.jpg");
+.cards{
+    margin-bottom: 10px;
+    
+}
+.scard{
+    box-shadow: 0px 10px 10px #888888;
+    padding: 0px;
 }

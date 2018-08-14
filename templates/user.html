@@ -5,58 +5,89 @@
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
     </head>
-    <body>
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="{{ url_for('home')}}">
-                <img src="/static/THE NEIGHBORHOODlogo-1.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                TheNeighborhood
-            </a>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-
-              </ul>
-            </div>
-        </nav>
-
-        <div id="profile">
-            <div class="card" style="width: 30%; align-self: center;">
-                    <img class="card-img-top" src="./static/background.jpg" alt="Card image cap">
-
-                    <div class="card-body">
-                        <h5 class="card-title">Welcome To Your Page</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>         
-                    </div>
-            </div>
-        </div>
-
-        
-        <div class="row">
-            <div class="col-4">
-
-            </div>
-            <div class=" col-4 " >
-                    <div class="card" style="width: 100%; align-self: center;">
-                        <img class="card-img-top" src="./static/background.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Welcome To Your Page</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                      
+    <body> 
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="{{ url_for('home')}}">
+                            <img src="/static/THE NEIGHBORHOODlogo-1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                            TheNeighborhood
+                        </a>
+            
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                          <ul class="navbar-nav">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Pricing</a>
+                            </li>
+            
+                          </ul>
                         </div>
-                    </div>
-            </div>
-            <div class="col-4">
+            </nav>
+            <div style="margin-bottom: 2%"></div>
+
+            <div class="row cards">
+                        <div class="col-4">
             
+                        </div>
+                        <div class="col-4" >
+                                <div class="card scard" style="width: 100%; align-self: center;">
+                                    <img class="card-img-top" src="./static/background.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Welcome To Your Page</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                  
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-4">
+                        
+                        </div>
+                        
             </div>
-            
+
+            <div class="row cards">
+                            <div class="col-4">
+                
+                            </div>
+                            <div class=" col-4 " >
+                                    <div class="card scard" style="width: 100%; align-self: center;">
+                                        <img class="card-img-top" src="./static/background.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Welcome To Your Page</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                      
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col-4">
+                            
+                            </div>
+                            
+            </div>
+                    
+            <div class="row cards">
+                            <div class="col-4">
+                
+                            </div>
+                            <div class=" col-4" >
+                                    <div class="card scard" style="width: 100%; align-self: center;">
+                                        <img class="card-img-top" src="./static/background.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Welcome To Your Page</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                      
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col-4">
+                            
+                            </div>
+                            
+            </div>
         </div>
+        
 
         <script src="{{ url_for('static', filename='jquery.js')}}"></script>  
         <script src="{{ url_for('static', filename='bootstrap.bundle.js')}}"></script>
