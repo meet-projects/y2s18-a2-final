@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
+<html style="height: 100%;">
     <head>
         <title>My Final Project</title>
-		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 
 </head>
 <body>
 	<div class="content">
-	
-	<h1> <span class="badge badge-primary">Log in</span> </h1>
+	<h1> <span id="header">Log in</span> </h1>
 	<form method="post">
 		<div class="form-group">
 			<div class="row">
@@ -33,6 +33,7 @@
 		</div>
 		</div>
 			<a href="{{'/log-in'}}" class="btn btn-outline-primary" role="button">Log In</a>
+		</div>
 	</form>
 	<script src="{{ url_for('static', filename='jquery.js')}}"></script>  
 	<script src="{{ url_for('static', filename='bootstrap.bundle.js')}}"></script>

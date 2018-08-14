@@ -130,6 +130,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.backgroundimg {
+#header{
     color:white;
+    text-align: center;
 }
