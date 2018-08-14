@@ -48,8 +48,7 @@ def check_user_and_pass(username, password):
     print("check")
     result = query.first()
     if result is not None:
-        session['logged_in'] = True
-        session['username'] = request.form['username']
+        
         return True
     else:
        print('wrong password!')
