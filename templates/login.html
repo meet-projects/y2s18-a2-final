@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>LOG IN</title>
+        <title>My Final Project</title>
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstarp.css') }}">
 
+<<<<<<< HEAD
 </head>
 <body>
 	<img src= " {{ url_for('static', filename='background.jpg') }}" width=”152px” height=”102px”>
@@ -36,6 +37,20 @@
 	<script src="{{ url_for('static', filename='bootstrap.bundle.js')}}"></script>
 	
 
+=======
+    </head>
+    <body>
+    	<form method="post">
+    	<h1> Log in </h1>
+
+    	<input type="text" name="user_name" placeholder="Username">
+    	<input type="text" name="password" placeholder="Password">
+
+    	<p> Forgot Password? <button class="btn btn-outline-primary" type="submit"> Log in   </button> </p>
+    	</form>
+        <script src="{{ url_for('static', filename='jquery.js')}}"></script>  
+        <script src="{{ url_for('static', filename='bootstrap.bundle.js')}}"></script>
+>>>>>>> b28c5edfe9d5445a4c2c22639f8b01aefae64974
 </body>
 
 
