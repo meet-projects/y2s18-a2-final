@@ -63,12 +63,28 @@
     margin-top: 5%;
     text-align:center;
     padding-left: 100px;
+<<<<<<< HEAD
 }
 
 #user{
     background: none;
 }
 
+=======
+
+    
+
+
+}
+.btn {
+    background-color: blue;
+}
+.welcome{
+    text-align: center;
+    color:green;
+    font-family: "Times New Roman",Times,serif;
+}
+>>>>>>> 3e91611538e593005743ea2eba98f4f6f881e68c
 #title{
     margin-top: 2.5%;
 

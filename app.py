@@ -18,10 +18,11 @@ def signup():
     else:
         username=request.form['username']
         password=request.form['password']
+        birth=request.form['birth']
         gender=request.form['gender']
         acc_type=request.form['acc_type']
         try:
-            add_account(username,password,gender,acc_type)
+            add_account(username,password,birth,gender,acc_type)
             return render_template('home.html')
         except:
             return render_template("signup.html", error_message = "Error: Username Taken")
