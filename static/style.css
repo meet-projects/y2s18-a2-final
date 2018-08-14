@@ -39,33 +39,9 @@
 }
 
 
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid blue;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize:vertical;
-}
+   
 
 
-input[type=submit]{
-    background-color: teal;
-    color:black;
-    padding: 12px 20px;
-    border:none;
-    border-radius: 4px;
-    cursor: pointer;
-}    
-
-
-
-input[type=submit]:hover{
-    background-color: green;
-}
 
 
 .container {
@@ -87,6 +63,14 @@ input[type=submit]:hover{
     margin-top: 5%;
     text-align:center;
     padding-left: 100px;
+<<<<<<< HEAD
+}
+
+#user{
+    background: none;
+}
+
+=======
 
     
 
@@ -100,6 +84,7 @@ input[type=submit]:hover{
     color:green;
     font-family: "Times New Roman",Times,serif;
 }
+>>>>>>> 3e91611538e593005743ea2eba98f4f6f881e68c
 #title{
     margin-top: 2.5%;
 
@@ -143,8 +128,13 @@ h1 {
     margin-bottom: 10px;
 }
 .scard{
-    box-shadow: 0px 10px 10px #888888;
+    box-shadow: 0px 10px 20px 2px #888888;
     padding: 0px;
+}
+.scard:hover{
+    
+    box-shadow: 0px 10px 20px 7px #888888;
+    transition: 0.3s;
 }
 
 body {
