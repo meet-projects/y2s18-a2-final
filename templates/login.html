@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+<html style="height: 100%;">
     <head>
         <title>My Final Project</title>
-		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 
 </head>
 <body>
@@ -29,7 +30,9 @@
 		</div>
 
 		</div>
+
 		<input type="submit" class="btn btn-primary" value="Log in">
+
 	</form>
 	<script src="{{ url_for('static', filename='jquery.js')}}"></script>  
 	<script src="{{ url_for('static', filename='bootstrap.bundle.js')}}"></script>
