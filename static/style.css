@@ -107,11 +107,10 @@ input[type=submit]:hover{
     width: 50%;
     padding: 10px;
     color:white;
+
 }
 
-#signup-header {
-    color:white;
-}
+
 
 .cards{
     margin-bottom: 10px;
@@ -119,4 +118,14 @@ input[type=submit]:hover{
 .scard{
     box-shadow: 0px 10px 10px #888888;
     padding: 0px;
+}
+
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.backgroundimg {
+    color:white;
 }
