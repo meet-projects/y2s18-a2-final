@@ -108,15 +108,15 @@ input[type=submit]:hover{
 .content {
     margin: auto;
     width: 50%;
-    border: 3px solid green;
     padding: 10px;
     color:white;
 }
 
-h1 {
+#signup-header {
     color:white;
 }
 
  body {
     background-image: url("background.jpg");
+    background-size:100%;
 }
