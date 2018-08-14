@@ -5,7 +5,7 @@
 }
 
 #home{
-    margin: 0%;
+    
     padding: 5%;
     background-image: url("background.jpg");
     text-align: center;
@@ -56,13 +56,22 @@
     text-align: center;
     margin-top: 10%;
     bottom: 80px;
+    color: teal;
+    background-color: white;
+    font-size: 30px;
 }
-
+#about h1{
+    color:green;
+}
 
 #buttons_home{
     margin-top: 5%;
     text-align:center;
     padding-left: 100px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6e9fd302e3e130182b40d97a01eaf64973c52d44
 }
 
 #user{
@@ -73,18 +82,29 @@
     
 
 
+<<<<<<< HEAD
 .btn {
     background-color: blue;
 }
+=======
+}
+
+>>>>>>> 6e9fd302e3e130182b40d97a01eaf64973c52d44
 .welcome{
     text-align: center;
     color:green;
     font-family: "Times New Roman",Times,serif;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6e9fd302e3e130182b40d97a01eaf64973c52d44
 #title{
     margin-top: 2.5%;
-
+    color:white;
     text-shadow: 8px rgb(255, 255, 255) 
+    
+    text-align: center;
 }
 
 
@@ -104,26 +124,22 @@
     text-align:center; 
     padding-left: 100px;
 }
-#title h1{
+h1#title{
     text-align:center;
+    color: white;
+    
 }
 
 
 .content {
     margin: auto;
     width: 50%;
-    border: 3px solid green;
     padding: 10px;
     color:white;
 }
 h1 {
     color:white;
 }
-
-body {
-    background-image: url("background.jpg");
-}
-
 
 
 .cards{
@@ -143,9 +159,10 @@ body {
     background-image: url('background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.backgroundimg {
     color:white;
 }
 
+#header{
+    color:white;
+    text-align: center;
+}
