@@ -4,83 +4,17 @@
     margin: 0;
 }
 
-/* Put your styles BELOW this line */
-
-.aboutUs {
-	color: blue;
-	position:  absolute;
-	top: 200px;
-	left:100px;
-}
-
-body {
+#home{
+    padding: 5%;
     background-image: url("background.jpg");
-}
-
-.main-content {
-    background: lightblue;
-    position: absolute;
-    top: 0;
-    left: 200px;
-    border: 5px solid blue;
-    margin: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 10px; 
-}
-
-.button {
-    background-color:#008CBA ; 
-    border-radius: 12px;
-    border:2px solid #4CAF50;
-    padding: 14px 40px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
-.button:hover {
-    background-color: #4CAF50; 
-    color: white;
-}
-
-
-
-body {
-	background-image: url("back.jpg");
-	    background-repeat: no-repeat;
+	background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;;
-}
+    background-position: top;
 
-.header {
-	background-image:url("header.png");
-	height:70px;
-	width:110%;
-	margin:-10px;
+    
 }
-
-.footer {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	left: 0;
-    height: 5%;
-    color: #8b3436;
-	background-color: #000000;
-	text-align: center;
-}
-
-p {
-	margin-left: 20px;
-    font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
-	font-size: 16px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: bold;
-	line-height: 26.4px;
-}
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -100,13 +34,16 @@ p {
     border-radius: 12px;
     border:2px solid #4CAF50;
     padding: 14px 40px;
+=======
+#about{
+>>>>>>> 1a02f3972018335771bf8882a9f2d7ff18664216
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    margin-top: 10%;
 }
+#buttons_home{
+    margin-top: 5%
 
-#login:hover {
-    background-color: #4CAF50; 
-    color: white;
+}
+#title{
+    margin-top: 2.5%;
 }
