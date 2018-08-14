@@ -10,7 +10,30 @@
     text-align: center;
 	background-repeat: no-repeat;
     background-attachment: fixed;
+<<<<<<< HEAD
+    background-position: center;;
+}
+
+.header {
+	background-image:url("THENEIGHBORHOODlogo1.png");
+	height:70px;
+	width:110%;
+	margin:-10px;
+}
+
+.footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    height: 5%;
+    color: #8b3436;
+	background-color: #000000;
+	text-align: center;
+}
+=======
     background-position: top;
+>>>>>>> 1a02f3972018335771bf8882a9f2d7ff18664216
 
     
 }
