@@ -7,8 +7,8 @@
 
         <style>
         body{
-            background-image: url("THENEIGHBORHOODlogo1.png")
-        } 
+            background:white;
+        }
         </style>     
     </head>
     
@@ -27,12 +27,14 @@
         </ul>
         
     
-        <div class="container" id="home">
-            <h1 class="display-4" id="title">THE NEIGHBORHOOD</h1>
+        <div class="container" id="home" hight=20>
+            <h1 class="display-4" id="title">  THE NEIGHBORHOOD</h1>
 
             <div class="button-box col-lg-12" id="buttons_home">
                 <a href="{{url_for('signup')}}" class="btn btn-primary" role="button">Sign Up</a>
-                
+
+                <a href="{{'/log-in'}}" class="btn btn-outline-primary" role="button">Log In</a>
+
             </div>
         </div>
 
@@ -41,26 +43,24 @@
             
     </div>
 
-    <a href="test.html">
+
      
-    </a>    
      
 
  
-    <div class="footer">
-    <p> Copyright &copy; www.csgochance.com </p>
-    </div>   
-
+     
         
 
        
-    </div>
+        </div>
 
-    <div class="container" id="about">
-        <h3>About us!</h3>
-        <p>THE NEIGHBORHOOD connects and helps the people of a neighborhood to get in contact and help each other.</p> 
-    </div>
+        <div class="container" id="about">
+            <h1>About us!</h1>
+            <p>THE NEIGHBORHOOD connects and helps the people of a neighborhood to get in contact and help each other.</p> 
+        </div>
 
+
+    
     <script src="{{ url_for('static', filename='jquery.js')}}"></script>  
     <script src="{{ url_for('static', filename='bootstrap.bundle.js')}}"></script>     
     </body>
