@@ -4,53 +4,13 @@
     margin: 0;
 }
 
-/* Put your styles BELOW this line */
-
-.aboutUs {
-	color: blue;
-	position:  absolute;
-	top: 200px;
-	left:100px;
-}
-
-body {
+#home{
+    padding: 5%;
     background-image: url("background.jpg");
-}
-
-.main-content {
-    background: lightblue;
-    position: absolute;
-    top: 0;
-    left: 200px;
-    border: 5px solid blue;
-    margin: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 10px; 
-}
-
-.button {
-    background-color:#008CBA ; 
-    border-radius: 12px;
-    border:2px solid #4CAF50;
-    padding: 14px 40px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
-.button:hover {
-    background-color: #4CAF50; 
-    color: white;
-}
-
-
-
-body {
-	background-image: url("back.jpg");
-	    background-repeat: no-repeat;
+	background-repeat: no-repeat;
     background-attachment: fixed;
+<<<<<<< HEAD
     background-position: center;;
 }
 
@@ -71,39 +31,20 @@ body {
 	background-color: #000000;
 	text-align: center;
 }
+=======
+    background-position: top;
+>>>>>>> 1a02f3972018335771bf8882a9f2d7ff18664216
 
-p {
-	margin-left: 20px;
-    font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
-	font-size: 16px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: bold;
-	line-height: 26.4px;
+    
 }
-
-.input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px solid red;
-    border-radius: 4px;
-}
-
-
-#login {
-    background-color:#008CBA ; 
-    border-radius: 12px;
-    border:2px solid #4CAF50;
-    padding: 14px 40px;
+#about{
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    margin-top: 10%;
 }
+#buttons_home{
+    margin-top: 5%
 
-#login:hover {
-    background-color: #4CAF50; 
-    color: white;
+}
+#title{
+    margin-top: 2.5%;
 }
