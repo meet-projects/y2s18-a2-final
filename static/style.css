@@ -39,33 +39,9 @@
 }
 
 
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid blue;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize:vertical;
-}
+   
 
 
-input[type=submit]{
-    background-color: teal;
-    color:black;
-    padding: 12px 20px;
-    border:none;
-    border-radius: 4px;
-    cursor: pointer;
-}    
-
-
-
-input[type=submit]:hover{
-    background-color: green;
-}
 
 
 .container {
@@ -87,12 +63,11 @@ input[type=submit]:hover{
     margin-top: 5%;
     text-align:center;
     padding-left: 100px;
-    
-
-
 }
 
-
+#user{
+    background: none;
+}
 
 #title{
     margin-top: 2.5%;
@@ -143,8 +118,13 @@ body {
     margin-bottom: 10px;
 }
 .scard{
-    box-shadow: 0px 10px 10px #888888;
+    box-shadow: 0px 10px 20px 2px #888888;
     padding: 0px;
+}
+.scard:hover{
+    
+    box-shadow: 0px 10px 20px 7px #888888;
+    transition: 0.3s;
 }
 
 body {

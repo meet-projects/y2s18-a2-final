@@ -31,7 +31,6 @@ def add_account(username,password,birth,gender,acc_type):
 def check_user_exists(username):
 
     account = session.query(Account).filter_by(username=username).first()
-   # return True if account is not None else False
     if account==None:
 
         return False
@@ -40,7 +39,6 @@ def check_user_exists(username):
 
 
 def check_user_and_pass(username, password):
-
     print("hello")
     Session = sessionmaker(bind=engine)
     s = Session()
@@ -48,7 +46,6 @@ def check_user_and_pass(username, password):
     print("check")
     result = query.first()
     if result is not None:
-        
         return True
     else:
        print('wrong password!')
