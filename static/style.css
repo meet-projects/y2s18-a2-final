@@ -25,3 +25,10 @@
 #title{
     margin-top: 2.5%;
 }
+
+
+.home {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+}
