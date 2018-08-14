@@ -29,11 +29,12 @@ def signup():
         
 @app.route('/log-in', methods = ['GET', 'POST'])
 def signin():
+    print("login")
     if request.method == 'POST':
         if check_user_and_pass(request.form['username'],request.form['password']) == True:
-            session['logged_in'] = True
-            session['username'] = request.form['username']
-            return redirect(url_for('user_page'))
+            
+            print("success")
+            return redirect(url_for('user'))
         else:
             print ('error:username or password are incorrect!!')
             return render_template('login.html',incorrect_user_or_pass ='error:username or password are incorrect!! ')

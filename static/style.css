@@ -5,12 +5,12 @@
 }
 
 #home{
+    margin: 0%;
     padding: 5%;
     background-image: url("background.jpg");
     text-align: center;
 	background-repeat: no-repeat;
     background-attachment: fixed;
-<<<<<<< HEAD
     background-position: center;;
 }
 
@@ -31,9 +31,6 @@
 	background-color: #000000;
 	text-align: center;
 }
-=======
-    background-position: top;
->>>>>>> 1a02f3972018335771bf8882a9f2d7ff18664216
 
     
 }
@@ -47,4 +44,12 @@
 }
 #title{
     margin-top: 2.5%;
+    text-shadow: 8px rgb(255, 255, 255) 
+}
+
+
+.home {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
 }
