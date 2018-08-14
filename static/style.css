@@ -11,6 +11,7 @@
     text-align: center;
 	background-repeat: no-repeat;
     background-attachment: fixed;
+
     background-position: center;;
 }
 
@@ -19,6 +20,7 @@
 	height:70px;
 	width:110%;
 	margin:-10px;
+    
 }
 
 .footer {
@@ -30,12 +32,15 @@
     color: #8b3436;
 	background-color: #000000;
 	text-align: center;
-}
 
-    
+    background-position: top;
+
+
+}
 #about{
     text-align: center;
     margin-top: 10%;
+    bottom: 80px;
 }
 #buttons_home{
     margin-top: 5%
@@ -43,6 +48,7 @@
 }
 #title{
     margin-top: 2.5%;
+
     text-shadow: 8px rgb(255, 255, 255) 
 }
 
@@ -51,4 +57,9 @@
     background-image: url('background.jpg');
     background-repeat: no-repeat;
     background-size: 50% 100%;
+}
+
+#profile{
+    position: fixed;
+    margin: 10px;
 }

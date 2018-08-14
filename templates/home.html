@@ -15,34 +15,51 @@
     <body>
         <ul class="nav justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+
+              <a class="nav-link active" href="#">contect us </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#">more about us</a>
+
+             
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
+            
         </ul>
+        
     
         <div class="container" id="home">
             <h1 class="display-4" id="title">THE NEIGHBORHOOD</h1>
 
             <div class="button-box col-lg-12" id="buttons_home">
                 <a href="{{url_for('signup')}}" class="btn btn-primary" role="button">Sign Up</a>
-                <a href="{{'/log-in'}}" class="btn btn-outline-primary" role="button">Log In</a>
+                
             </div>
         </div>
+
+        
+           
+            
+    </div>
+
+    <a href="test.html">
+     
+    </a>    
+     
+
  
+    <div class="footer">
+    <p> Copyright &copy; www.csgochance.com </p>
+    </div>   
+
         
 
        
-        </div>
+    </div>
 
-        <div class="container" id="about">
-            <h3>About us!</h3>
-            <p>THE NEIGHBORHOOD connects and helps the people of a neighborhood to get in contact and help each other.</p> 
-        </div>
+    <div class="container" id="about">
+        <h3>About us!</h3>
+        <p>THE NEIGHBORHOOD connects and helps the people of a neighborhood to get in contact and help each other.</p> 
+    </div>
 
     <script src="{{ url_for('static', filename='jquery.js')}}"></script>  
     <script src="{{ url_for('static', filename='bootstrap.bundle.js')}}"></script>     
