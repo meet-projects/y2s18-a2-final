@@ -12,7 +12,8 @@
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: white;
-    background-position: center;;
+    background-position: center;
+    height: 300px;
 }
 
 .header {
@@ -80,6 +81,9 @@ input[type=submit]:hover{
 #buttons_home{
     margin-top: 5%;
     text-align:center;
+    padding-left: 100px;
+    
+
 
 }
 
@@ -90,20 +94,12 @@ input[type=submit]:hover{
     color:white;
     text-shadow: 8px rgb(255, 255, 255);
     text-align:center; 
+    padding-left: 100px;
 }
 #title h1{
     text-align:center;
 }
 
-.home {
-    background-image: url('background.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
-    align-self: center;
-    background-color: white;
-    
-}
 
 
 .content {
