@@ -5,6 +5,7 @@
 }
 
 #home{
+    margin: 0%;
     padding: 5%;
     background-image: url("background.jpg");
     text-align: center;
@@ -31,7 +32,6 @@
     color: #8b3436;
 	background-color: #000000;
 	text-align: center;
-}
 
     background-position: top;
 
@@ -76,7 +76,8 @@ input[type=submit]:hover{
 }
 #title{
     margin-top: 2.5%;
-    color:bold blue;
+
+    text-shadow: 8px rgb(255, 255, 255) 
 }
 
 

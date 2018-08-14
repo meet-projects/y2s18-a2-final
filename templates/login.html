@@ -5,18 +5,52 @@
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstarp.css') }}">
 
+<<<<<<< HEAD
+</head>
+<body>
+	<img src= " {{ url_for('static', filename='background.jpg') }}" width=”152px” height=”102px”>
+	<h1> <span class="badge badge-primary">Log in</span> </h1>
+	<form method="post">
+		<div class="form-group">
+		<div class="row">
+			<div class="col-5">	
+			<label for="exampleInputEmail1">Email address</label>
+			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+			<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone.</small>
+		</div>
+		</div>
+		<div class="row">
+			<div class="col-5">		
+			<div class="form-group">
+			<label for="exampleInputPassword1">Password</label>
+			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		</div>
+		</div>
+		</div>
+			<div class="form-group form-check">
+			<input type="checkbox" class="form-check-input" id="exampleCheck1">
+			<label class="form-check-label" for="exampleCheck1">Check me out</label>
+		</div>
+		<a href="{{'/log-in'}}" class="btn btn-outline-primary" role="button">Log In</a>
+	</form>
+	<script src="{{ url_for('static', filename='jquery.js')}}"></script>  
+	<script src="{{ url_for('static', filename='bootstrap.bundle.js')}}"></script>
+	
+
+=======
     </head>
     <body>
     	<form method="post">
     	<h1> Log in </h1>
-
-    	<input type="text" name="user_name" placeholder="Username">
-    	<input type="text" name="password" placeholder="Password">
-
+		<input type="text" name="username" placeholder="Username">
+    	<input type="password" name="password" placeholder="Password">
     	<p> Forgot Password? <button class="btn btn-outline-primary" type="submit"> Log in   </button> </p>
     	</form>
         <script src="{{ url_for('static', filename='jquery.js')}}"></script>  
         <script src="{{ url_for('static', filename='bootstrap.bundle.js')}}"></script>
+>>>>>>> b28c5edfe9d5445a4c2c22639f8b01aefae64974
 </body>
+
+
 </html>
 
