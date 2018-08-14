@@ -78,3 +78,10 @@ input[type=submit]:hover{
     margin-top: 2.5%;
     color:bold blue;
 }
+
+
+.home {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+}
