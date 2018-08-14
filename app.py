@@ -32,9 +32,10 @@ def signin():
     print("login")
     if request.method == 'POST':
         if check_user_and_pass(request.form['username'],request.form['password']) == True:
-            
+            session['logged_in'] = True
+            session['username'] = request.form['username']
             print("success")
-            return redirect(url_for('user'))
+            return redirect(url_for('user_page'))
         else:
             print ('error:username or password are incorrect!!')
             return render_template('login.html',incorrect_user_or_pass ='error:username or password are incorrect!! ')
@@ -51,5 +52,7 @@ def user_page():
 
 # Running the Flask app
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.secret_key = 'super secret key'
+
+    app.run(debug=True, port=8080)
 

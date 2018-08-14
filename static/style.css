@@ -26,8 +26,8 @@
 
 
 
-    
-}
+
+
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -38,6 +38,8 @@ input[type=text], select, textarea {
     margin-bottom: 16px;
     resize:vertical;
 }
+
+
 input[type=submit]{
     background-color: teal;
     color:black;
@@ -46,15 +48,22 @@ input[type=submit]{
     border-radius: 4px;
     cursor: pointer;
 }    
+
+
+
 input[type=submit]:hover{
     background-color: green;
 }
+
+
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
     
     text-align: center;
-}    
+}
+
+
 #about{
     text-align: center;
     margin-top: 10%;
@@ -67,10 +76,17 @@ input[type=submit]:hover{
     color:green;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2f1253ba02c15ece42c7685286787182317e0da7
 #buttons_home{
     margin-top: 5%
 
 }
+
+
+
 #title{
     margin-top: 2.5%;
     color:white;
@@ -83,7 +99,34 @@ input[type=submit]:hover{
     background-image: url('background.jpg');
     background-repeat: no-repeat;
     background-size: 50% 100%;
+<<<<<<< HEAD
     align-self: center;
     background-color: white;
     
 }
+=======
+}
+
+.centeringimg {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: 50% 100
+}
+
+
+.content {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    color:white;
+}
+
+h1 {
+    color:white;
+}
+
+ body {
+    background-image: url("background.jpg");
+}
+>>>>>>> 2f1253ba02c15ece42c7685286787182317e0da7
