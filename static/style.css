@@ -55,19 +55,24 @@
 #about{
     text-align: center;
     margin-top: 10%;
-    bottom: 80px;
+    bottom: 90px;
     color: teal;
     background-color: white;
     font-size: 30px;
 }
 #about h1{
     color:green;
+    font-family: "Times New Roman",Times,serif;
+    font-size: 45px;
 }
-
+#about p{
+    font-family: "Times New Roman",Times,serif;
+}
 #buttons_home{
     margin-top: 5%;
     text-align:center;
     padding-left: 100px;
+    right:45px;
 }
 
 #user{
@@ -85,8 +90,12 @@
     text-align: center;
     color:green;
     font-family: "Times New Roman",Times,serif;
-}
+    
 
+}
+.welcome h1{
+    font-size:50px;
+}
 #title{
     margin-top: 2.5%;
     color:white;
