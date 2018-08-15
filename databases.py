@@ -64,3 +64,5 @@ def add_posts(title,content,picture):
    )
    session.add(add_post)
    session.commit()
+
+admin=Account(first_name="admin",last_name="admin",username="admin",password="admin",gender="admin",acc_type="admin")
