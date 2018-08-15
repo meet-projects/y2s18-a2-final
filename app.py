@@ -16,13 +16,14 @@ def signup():
     if request.method=='GET':
         return render_template('signup.html')
     else:
+        first_name=request.form['first_name']
+        last_name=request.form['last_name']
         username=request.form['username']
         password=request.form['password']
-        birth=request.form['birth']
         gender=request.form['gender']
         acc_type=request.form['acc_type']
         try:
-            add_account(username,password,birth,gender,acc_type)
+            add_account(first_name,last_name,username,password,gender,acc_type)
             return render_template('home.html')
         except:
             return render_template("signup.html", error_message = "Error: Username Taken")
