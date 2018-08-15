@@ -19,5 +19,5 @@ class Account(Base):
     birth = Column(String)
 
     def __repr__(self):
-        return ("first_name: {}, last_name: {},Username: {}, Account Type: {},Password: {},Gender: {}, Birth: {}"
-        .format(self.first_name,self.last_name,self.username, self.acc_type,self.password,self.gender,self.birth))
+        return ("first_name: {}, last_name: {},Username: {}, Account Type: {},Password: {},Gender: {}"
+        .format(self.first_name,self.last_name,self.username, self.acc_type,self.password,self.gender))

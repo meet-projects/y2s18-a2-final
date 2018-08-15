@@ -6,29 +6,29 @@
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
 </head>
 <body>
+
 	<div class="backgroundimg">
 	<h1>SIGN UP</h1>
 	<form action='/sign-up' method="POST">
+
 		<div class="content">
 		<form class="needs-validation" novalidate></form>
     <div class="form-row">
     <div class="col-md-4 mb-3">
-<<<<<<< HEAD
-    <label for="validationCustom01">First name</label>
-=======
+
       <label for="validationCustom01">First name</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+      <input type="text" name="first_name"class="form-control" id="validationCustom01" placeholder="First name" required>
       <div class="valid-feedback">
         Looks good!
       </div>
     </div>
     <div class="col-md-4 mb-3">
       <label for="validationCustom02">Last name</label>
-      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required> 
+      <input type="text" name="last_name" class="form-control" id="validationCustom02" placeholder="Last name" required> 
       <div class="valid-feedback">
         Looks good!
       </div>
->>>>>>> 3e91611538e593005743ea2eba98f4f6f881e68c
+
     </div>
     <div class="col-md-4 mb-3">
       <label for="validationCustomUsername">Username</label>
@@ -74,7 +74,6 @@
       <div class="invalid-feedback">
         You must agree before submitting.
       </div>
-    </div>
   </div>
   <button class="btn btn-primary" type="submit">Submit form</button>
   <src class="centerningimg" img="background.jpg">
