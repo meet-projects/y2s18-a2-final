@@ -123,7 +123,13 @@ h1#title{
     margin: auto;
     width: 50%;
     padding: 10px;
-    color:white;
+    border-width: 4px;
+    border-style: solid;
+    border-color: green;
+    background-color: white; 
+    color:black;
+
+
 }
 h1 {
     color:white;
@@ -155,4 +161,5 @@ body {
 #header{
     color:white;
     text-align: center;
+    background-color: #007bff; 
 }
