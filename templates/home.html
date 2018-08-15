@@ -1,52 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> THE NEIGHBORHOOD</title>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
 
-        <style>
-        body{
-            background:white;
+<head>
+    <title> THE NEIGHBORHOOD</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
+
+    <style>
+        body {
+            background: white;
         }
-        </style>     
-    </head>
-    
-    <body>
-        
+    </style>
+</head>
+
+<body>
 
 
-    <div class="welcome">    
-    <h1> WELCOME TO THE</h1>
-</div>
-        <div class="container" id="home">
-            <h1 class="display-4" id="title">  THE NEIGHBORHOOD</h1>
 
-            <div class="button-box col-lg-12" id="buttons_home">
-                <a href="{{url_for('signup')}}" class="btn btn-primary" role="button">Sign Up</a>
+    <div class="welcome">
+        <h1> WELCOME TO THE</h1>
+    </div>
+    <div class="container" id="home">
+        <h1 class="display-4" id="title"> THE NEIGHBORHOOD</h1>
 
-
-                <a href="{{'/log-in'}}" class="btn btn-primary" role="button">Log In</a>
-
-
-            </div>
+        <div class="button-box col-lg-12" id="buttons_home">
+            {% if session['logged_in']==True%}
+            <a href="{{url_for('user_page')}}" class="btn btn-primary" role="button">Posts</a>
+            {%else%}
+            <a href="{{url_for('signup')}}" class="btn btn-primary" role="button">Sign Up</a>
+            <a href="{{'/log-in'}}" class="btn btn-primary" role="button">Log In</a>
+            {%endif%}
         </div>
     </div>
-
-        
-           
-            
     </div>
-        </div>
-
-        <div class="container" id="about">
-            <h1>About us!</h1>
-            <p>THE NEIGHBORHOOD connects and helps the people of a neighborhood to get in contact and help each other.</p> 
-        </div>
 
 
-    
-    <script src="{{ url_for('static', filename='jquery.js')}}"></script>  
-    <script src="{{ url_for('static', filename='bootstrap.bundle.js')}}"></script>     
-    </body>
+
+
+    </div>
+    </div>
+
+    <div class="container" id="about">
+        <h1>About us!</h1>
+        <p>THE NEIGHBORHOOD connects and helps the people of a neighborhood to get in contact and help each other.</p>
+    </div>
+
+
+
+    <script src="{{ url_for('static', filename='jquery.js')}}"></script>
+    <script src="{{ url_for('static', filename='bootstrap.bundle.js')}}"></script>
+</body>
+
 </html>

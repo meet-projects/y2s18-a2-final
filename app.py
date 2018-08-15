@@ -53,16 +53,15 @@ def signin():
 
 @app.route('/user', methods=['GET', 'POST'])
 def user_page():
-    print("chikens")
     if session.get('logged_in'):
         posts = get_posts()
         if request.method == 'GET':
-            return render_template('user.html', posts=posts)
+            return render_template('user.html', posts=posts, username=session['username'])
         else:
             title = request.form['title']
             content = request.form['content']
             picture = request.form['picture']
-            add_post(title, content, picture)
+            add_post(title, content, picture, session['username'])
             return redirect(url_for('user_page'))
     else:
         print("ns")
@@ -70,6 +69,7 @@ def user_page():
 
 @app.route('/signout')
 def signout():
+    session.clear()
     return redirect(url_for('home'))
 
 

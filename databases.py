@@ -58,11 +58,12 @@ def get_posts():
     posts=reversed(posts)
     return posts
     
-def add_post(title,content,picture):
+def add_post(title,content,picture,username):
    add_post=Post(
        title=title,
        content=content,
        picture=picture,
+       username=username
 
    )
    session.add(add_post)

@@ -5,10 +5,12 @@
     <title>THE NEIGHBORHOOD</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
+
+
 </head>
 
 <body id="user">
-
+    
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="{{ url_for('home')}}">
@@ -27,47 +29,51 @@
         </nav>
         <div style="margin-bottom: 2%"></div>
 
-        <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4">
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+
+
+    </div>
+    <div class="row" id="rowsss">
+        <div class="col-6">
+            {%for post in posts%}
+            <div class="row cards">
+                <div class="col-2">
+
+                </div>
+                <div class="col-8">
+                    <div class="card scard" style="width: 100%; align-self: center;">
+                        <img class="card-img-top" src="{{post.picture}}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">{{post.title}}</h5>
+                            <p class="card-text">{{post.content}}</p>
+                            <p>{{post.user.username}}</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+
+                </div>
+
+            </div>
+            {%endfor%}
+        </div>
+        <div class="col-4">
+            <div class="card scard" style="padding: 2%;position: fixed">
                 <form method="POST">
-                   Title
-                   <input name="title" class="form-control" type="text" placeholder="Write Title">
-                   Discription
-                   <input name="content" class="form-control" type="text" placeholder="Write Something">
-                    Image
-                    <input name="picture" class="form-control" type="text" placeholder="Place Image URL" alt="NO picture">
+                    <h3>Create A Post</h3>
+                    Title
+                    <input name="title" class="form-control" type="text" placeholder="Write Title" required> Discription
+                    <input name="content" class="form-control" type="text" placeholder="Write Something" required> Image
+                    <input name="picture" class="form-control" type="text" placeholder="Place Image URL" alt="NO picture" required>
                     <input type="submit" name="post" class="btn btn-primary" placeholder="Post" style="margin: 2% ; align-self: center;">
                 </form>
             </div>
-            <div class="col-4"></div>
         </div>
-        
 
-        {%for post in posts%}
-        <div class="row cards">
-            <div class="col-4">
-
-            </div>
-            <div class="col-4">
-                <div class="card scard" style="width: 100%; align-self: center;">
-                    <img class="card-img-top" src="{{post.picture}}" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">{{post.title}}</h5>
-                        <p class="card-text">{{post.content}}</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-
-            </div>
-
-        </div>
-        {%endfor%}
     </div>
-
-
+    </div>
     <script src="{{ url_for('static', filename='jquery.js')}}"></script>
     <script src="{{ url_for('static', filename='bootstrap.bundle.js')}}"></script>
 </body>
