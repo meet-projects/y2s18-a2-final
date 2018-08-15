@@ -2,7 +2,7 @@
 from flask import Flask, render_template, url_for, redirect, request, session
 
 # Add functions you need from databases.py to the next line!
-from databases import add_account,check_user_and_pass
+from databases import add_account,check_user_and_pass,check_user_exists,get_posts
 
 # Starting the flask app
 app = Flask(__name__)
@@ -48,12 +48,11 @@ def signin():
 def user_page():
     print("chikens")
     if session.get('logged_in'):
-
-        return render_template('user.html')
+        posts=get_posts()
+        return render_template('user.html',posts=posts )
     else:
         print("ns")
         return redirect(url_for('signin'))
-
 
 # Running the Flask app
 if __name__ == "__main__":

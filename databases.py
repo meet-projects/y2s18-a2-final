@@ -1,6 +1,6 @@
 # Database related imports
 # Make sure to import your tables!
-from model import Base, Account
+from model import Base, Account, Post
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -52,6 +52,15 @@ def check_user_and_pass(username, password):
        print('wrong password!')
        return False
        
+def get_posts():
+    return session.query(Post).all()
     
-    
-    # check = session.query(Account).filter(username)
+def add_posts(title,content,picture):
+   add_post=Post(
+       title=title,
+       content=content,
+       picture=picture,
+
+   )
+   session.add(add_post)
+   session.commit()
