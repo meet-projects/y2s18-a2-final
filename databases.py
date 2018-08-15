@@ -53,9 +53,12 @@ def check_user_and_pass(username, password):
        return False
        
 def get_posts():
-    return session.query(Post).all()
+    posts = session.query(Post).all()
+    print(type(posts))
+    posts=reversed(posts)
+    return posts
     
-def add_posts(title,content,picture):
+def add_post(title,content,picture):
    add_post=Post(
        title=title,
        content=content,
@@ -65,4 +68,3 @@ def add_posts(title,content,picture):
    session.add(add_post)
    session.commit()
 
-admin=Account(first_name="admin",last_name="admin",username="admin",password="admin",gender="admin",acc_type="admin")
