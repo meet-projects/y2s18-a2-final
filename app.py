@@ -24,7 +24,7 @@ def signup():
         acc_type=request.form['acc_type']
         try:
             add_account(first_name,last_name,username,password,gender,acc_type)
-            return render_template('login.html')
+            return redirect (url_for('signin'))
         except:
             return render_template("signup.html", error_message = "Error: Username Taken")
         
