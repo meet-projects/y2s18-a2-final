@@ -154,6 +154,7 @@ h1 {
     transition: 0.3s;
     width: 40%;
     border-radius: 5px;
+    border: #000000;
 }
 
 .scard:hover {
