@@ -68,6 +68,11 @@ def user_page():
         print("ns")
         return redirect(url_for('signin'))
 
+@app.route('/signout')
+def signout():
+    return redirect(url_for('home'))
+
+
 
 # Running the Flask app
 if __name__ == "__main__":
