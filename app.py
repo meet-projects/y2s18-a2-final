@@ -51,7 +51,7 @@ def signin():
     return render_template('login.html')
 
 
-@app.route('/user', methods=['GET', 'POST'])
+@app.route('/posts', methods=['GET', 'POST'])
 def user_page():
     if session.get('logged_in'):
         posts = get_posts()
