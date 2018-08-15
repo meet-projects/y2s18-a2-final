@@ -68,14 +68,12 @@
     margin-top: 5%;
     text-align:center;
     padding-left: 100px;
-
+    right:45px;
 }
 
 #user{
     background: none;
 }
-
-
     
 
 
@@ -88,6 +86,7 @@
     text-align: center;
     color:green;
     font-family: "Times New Roman",Times,serif;
+
 }
 
 #title{
