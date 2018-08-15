@@ -68,10 +68,7 @@
     margin-top: 5%;
     text-align:center;
     padding-left: 100px;
-<<<<<<< HEAD
-=======
 
->>>>>>> 6e9fd302e3e130182b40d97a01eaf64973c52d44
 }
 
 #user{
@@ -82,27 +79,21 @@
     
 
 
-<<<<<<< HEAD
 .btn {
     background-color: blue;
 }
-=======
-}
 
->>>>>>> 6e9fd302e3e130182b40d97a01eaf64973c52d44
+
 .welcome{
     text-align: center;
     color:green;
     font-family: "Times New Roman",Times,serif;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 6e9fd302e3e130182b40d97a01eaf64973c52d44
 #title{
     margin-top: 2.5%;
     color:white;
-    text-shadow: 8px rgb(255, 255, 255) 
+    text-shadow: 8px rgb(255, 255, 255) ;
     
     text-align: center;
 }
@@ -145,14 +136,16 @@ h1 {
 .cards{
     margin-bottom: 10px;
 }
-.scard{
-    box-shadow: 0px 10px 20px 2px #888888;
-    padding: 0px;
-}
-.scard:hover{
-    
-    box-shadow: 0px 10px 20px 7px #888888;
+
+.scard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.scard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 body {
