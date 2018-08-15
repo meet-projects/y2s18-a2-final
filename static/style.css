@@ -74,13 +74,13 @@
 #user{
     background: none;
 }
-
-
     
+
 
 .btn {
     background-color: blue;
 }
+
 
 .welcome{
     text-align: center;
@@ -92,7 +92,7 @@
 #title{
     margin-top: 2.5%;
     color:white;
-    text-shadow: 8px rgb(255, 255, 255) 
+    text-shadow: 8px rgb(255, 255, 255) ;
     
     text-align: center;
 }
@@ -135,14 +135,16 @@ h1 {
 .cards{
     margin-bottom: 10px;
 }
-.scard{
-    box-shadow: 0px 10px 20px 2px #888888;
-    padding: 0px;
-}
-.scard:hover{
-    
-    box-shadow: 0px 10px 20px 7px #888888;
+
+.scard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.scard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 body {
